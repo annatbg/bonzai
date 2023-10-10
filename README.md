@@ -2,9 +2,10 @@
 
 ## Sida för hotellet Bonz.ai
 
--Responsiv (mobile first) design med CSS -Flexbox och CSS Grid
--Semantisk HTML
--BEM namnstandard i CSS
+- Responsiv (mobile first) design med
+- CSS Flexbox och CSS Grid
+- Semantisk HTML
+- BEM namnstandard i CSS
 
 ## Wireframe på Figma
 
