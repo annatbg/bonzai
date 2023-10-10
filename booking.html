@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Book a room</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <a href="index.html">
+            <img
+              class="header__logo"
+              src="assets/logo/bonz.ai-logo-black-landscape.png"
+              alt=""
+            />
+          </a>
+
+          <a href="about.html">Bonzai Copenhagen</a>
+          <a href="booking.html">Book room</a>
+        </ul>
+      </nav>
+      <section class="hero__img">
+        <section class="hero__text">
+          <h1>Luxurious Rooms</h1>
+          <p>Rooms Starting at 150€</p>
+          <a href="booking.html"><button>Book a room</button></a>
+        </section>
+      </section>
+    </header>
+
+    <main>
+      <!-- ----- SEARCH ROOMS ------ -->
+      <section class="main__search">
+        <!-- select 1 -->
+        <article class="main__search__card">
+          <section class="main__input__select">
+            <label for="room">Room type</label>
+            <select name="room" id="room">
+              <option value="standard">Standard</option>
+              <option value="deluxe">Deluxe</option>
+              <option value="suite">Suite</option>
+              <option value="studio">Studio</option>
+            </select>
+          </section>
+        </article>
+
+        <!-- select 2 -->
+        <article class="main__search__card">
+          <section class="main__input__select">
+            <label for="guests">Guests</label>
+            <select name="guests" id="cars">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+            </select>
+          </section>
+        </article>
+
+        <!-- range -->
+        <article class="main__search__card">
+          <section class="main__input__range">
+            <label for="volume">Room price</label>
+            <input type="range" id="price" name="price" min="0" max="10" />
+          </section>
+        </article>
+
+        <!-- week -->
+        <article class="main__search__card">
+          <section class="main__input__week">
+            <label for="week">Availability:</label>
+            <input
+              type="week"
+              name="week"
+              id="camp-week"
+              min="2023-W41"
+              max="2024-W30"
+              required
+            />
+          </section>
+        </article>
+
+        <!-- checkboxes -->
+        <article class="main__search__card">
+          <section class="main__input__check">
+            <input type="checkbox" id="breakfast" name="breakfast" />
+            <label for="breafast">Breakfast</label>
+          </section>
+
+          <section class="main__input__check">
+            <input type="checkbox" id="pets" name="pets" />
+            <label for="pets">Pets</label>
+          </section>
+
+          <section class="main__input__check">
+            <input type="checkbox" id="bicycle" name="bicycle" />
+            <label for="bicycle">Bicycle</label>
+          </section>
+        </article>
+      </section>
+
+      <!-- -------- GALLERY ROOMS ----------- -->
+      <section class="main__gallery">
+        <section class="main__rooms__card">
+          <figure class="main__rooms__price">€150</figure>
+          <img class="main__rooms__img" src="assets/photos/01-day.jpg" alt="" />
+          <p>Standard</p>
+        </section>
+        <section class="main__rooms__card">
+          <figure class="main__rooms__price">€300</figure>
+          <img class="main__rooms__img" src="assets/photos/01-day.jpg" alt="" />
+          <p>Deluxe</p>
+        </section>
+        <section class="main__rooms__card">
+          <figure class="main__rooms__price">€400</figure>
+          <img class="main__rooms__img" src="assets/photos/01-day.jpg" alt="" />
+          <p>Suite</p>
+        </section>
+        <section class="main__rooms__card">
+          <figure class="main__rooms__price">€450</figure>
+          <img class="main__rooms__img" src="assets/photos/01-day.jpg" alt="" />
+          <p>Studio</p>
+        </section>
+      </section>
+    </main>
+  </body>
+</html>

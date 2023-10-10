@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre&family=Merriweather&family=Montserrat&family=Roboto&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100%;
+  width: 375px;
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+}
+
+/* ------ HEADER ------ */
+
+.hero__img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
+    url("/assets/photos/02-day.jpg");
+  height: 250px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  /* border: solid 1px pink; */
+}
+
+.hero__img h1,
+p,
+button {
+  margin: 0.5rem;
+}
+
+.hero__img button {
+  padding: 0.3rem;
+}
+
+.hero__text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  /* background-color: rgba(0, 0, 0, 0.2); */
+}
+
+header {
+  width: auto;
+  /* border: solid 1px cornflowerblue; */
+  margin-bottom: 2rem;
+}
+
+nav {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: 100%;
+  /* border: solid 1px rgb(226, 19, 19); */
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  /* border: solid 1px rgb(241, 171, 225); */
+}
+
+.header__logo {
+  width: 10rem;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+/* ----- MAIN ------ */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+figcaption {
+  font-size: 1.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.main__text {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+/* ----- MAIN SERVICES ---- */
+
+.main__services {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 2fr 2fr;
+  margin-bottom: 2rem;
+  /* border: solid 1px rgb(74, 235, 109); */
+}
+
+.main__services__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  /* border: solid 1px yellow; */
+}
+
+.icon {
+  height: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+/* ------- MAIN ROOMS ------ */
+
+.main__rooms {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  /* border: solid 1px rgb(74, 235, 109); */
+}
+
+.main__rooms p {
+  font-size: 0.9rem;
+  padding: 0.8rem;
+}
+
+.main__rooms__card {
+  margin: 0.3rem;
+  border: solid 1px pink;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-radius: 5px;
+  box-shadow: 1px 3px pink;
+}
+
+.main__rooms__price {
+  border: solid 1px pink;
+  border-radius: 5px;
+  background-color: white;
+  padding: 0.4rem;
+  position: absolute;
+  left: 2rem;
+  top: 2rem;
+}
+
+.main__rooms__img {
+  max-width: 90%;
+  margin-top: 1rem;
+}
+
+/* ----- BOOKING PAGE ----- */
+
+.main__search {
+  margin-bottom: 2rem;
+}
+
+.main__search__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: 0.5rem;
+  /* border: solid 1px yellow; */
+}
+
+label {
+  margin: 0.3rem;
+}
+
+.main__input__range,
+.main__input__week,
+.main__input__select {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main__input__check {
+  margin: 0.1rem;
+}
+
+.main__gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  /* border: solid 1px rgb(74, 235, 109); */
+}
+
+/* ----- ABOUT PAGE ----- */
+
+.about__article {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.about__article h1 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.about__article p {
+  font-size: 1rem;
+}
