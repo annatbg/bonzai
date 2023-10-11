@@ -1,19 +1,24 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre&family=Merriweather&family=Montserrat&family=Roboto&display=swap");
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  height: 100%;
+body,
+html {
+  height: 100vh;
   width: 100%;
   margin: auto;
   font-family: "Roboto", sans-serif;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&family=Frank+Ruhl+Libre&family=Merriweather&family=Montserrat&family=Roboto&display=swap");
+
 /* ------ HEADER ------ */
+
+header {
+  background-color: #f9bdbd;
+}
 
 .hero__img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
@@ -23,17 +28,22 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  /* border: solid 1px pink; */
+  /* border: solid 5px rgb(245, 46, 79); */
 }
 
-.hero__img h1,
-p,
-button {
-  margin: 0.5rem;
+h1,
+p {
+  margin-bottom: 0.5rem;
 }
 
 .hero__img button {
-  padding: 0.3rem;
+  margin-top: 1.5rem;
+  padding: 13px 29px;
+  line-height: 17px;
+  font-size: 14px;
+  background-color: #f9bdbd;
+  border: solid 2px rgb(43, 43, 43);
+  cursor: pointer;
 }
 
 .hero__text {
@@ -43,18 +53,11 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  /* background-color: rgba(0, 0, 0, 0.2); */
-}
-
-header {
-  width: auto;
-  /* border: solid 1px cornflowerblue; */
-  margin-bottom: 2rem;
 }
 
 nav {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  padding-top: 0.8rem;
+  padding-bottom: 0.5rem;
   /* display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,16 +83,19 @@ ul {
 header a {
   color: black;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 /* ----- MAIN ------ */
 
-main {
+.MAIN__SERVICES {
+  width: 100%;
+  /* background-color: #f9e0e0; */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
 }
 
 main h2 {
@@ -109,11 +115,12 @@ figcaption {
 
 /* ----- MAIN SERVICES ---- */
 
-.main__services {
+.main__grid {
+  width: 100%;
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 2fr 2fr;
-  margin-bottom: 2rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 2rem;
   /* border: solid 1px rgb(74, 235, 109); */
 }
 
@@ -122,7 +129,9 @@ figcaption {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 150px;
+  text-align: center;
+  /* height: 150px; */
+  padding: 0.3rem;
   /* border: solid 1px yellow; */
 }
 
@@ -134,10 +143,11 @@ figcaption {
 /* ------- MAIN ROOMS ------ */
 
 .main__rooms {
+  /* background-color: #f9e0e0; */
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   /* border: solid 1px rgb(74, 235, 109); */
 }
 
@@ -148,14 +158,14 @@ figcaption {
 
 .main__rooms__card {
   margin: 0.3rem;
-  border: solid 1px pink;
+  border: solid 2px #fbd5d5;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   border-radius: 5px;
-  box-shadow: 1px 3px pink;
+  box-shadow: 1px 3px #fbd5d5;
 }
 
 .main__rooms__price {
@@ -173,6 +183,59 @@ figcaption {
   margin-top: 1rem;
 }
 
+/* ---- FOOTER ---- */
+
+footer nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fbd5d5;
+}
+
+footer h2 {
+  font-size: 2rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  /* border: solid 1px grey; */
+}
+
+.FOOTER__LOGO {
+  margin: 2rem;
+  width: 6rem;
+  /* padding: 1rem; */
+}
+
+.FOOTER__TEXT {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+footer ul {
+  width: 50%;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-bottom: 2rem;
+}
+
+footer li {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+footer p {
+  font-size: 1rem;
+  line-height: 2;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
 /* ----- BOOKING PAGE ----- */
 
 .main__search {
@@ -185,8 +248,8 @@ figcaption {
   justify-content: center;
   align-items: center;
   height: fit-content;
-  margin: 0.5rem;
-  /* border: solid 1px yellow; */
+  padding: 1rem;
+  /* border: solid 1px orange; */
 }
 
 label {
@@ -219,7 +282,9 @@ label {
 .about__article {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
   line-height: 1.5;
   margin-bottom: 2rem;
 }
@@ -233,20 +298,29 @@ label {
   font-size: 1rem;
 }
 
-/* MEDIA QUERY TABLET */
+/* ####### MEDIA QUERY TABLET ####### */
 
 @media screen and (min-width: 768px) {
-  ul {
+  header ul {
     flex-direction: row;
     justify-content: space-evenly;
   }
 
-  li {
+  header li {
     padding: 1rem;
+    /* border: solid 1px black; */
   }
 
   .hero__img {
-    height: 350px;
+    height: 300px;
+  }
+
+  header a {
+    font-size: 1.5rem;
+  }
+
+  .header__logo {
+    width: 8rem;
   }
 
   .hero__img h1 {
@@ -258,19 +332,29 @@ label {
   }
 
   .hero__img button {
-    padding: 0.7rem;
+    padding: 20px 50px;
+    line-height: 17px;
+    font-size: 20px;
   }
 
-  .main__services {
-    width: 80%;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+  /* -- MAIN CONTENT -- */
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main__grid {
+    width: 90%;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
     /* border: solid 1px blue; */
   }
 
   .main__services__card {
-    height: 200px;
-    /* border: solid 1px red; */
+    padding: 1rem;
+    /* border: solid 1px yellow; */
   }
 
   .main__text {
@@ -278,8 +362,12 @@ label {
   }
 
   .main__rooms {
-    width: 90%;
-    margin-top: 1rem;
+    padding-top: 1.5rem;
+  }
+
+  .MAIN__ROOMS__GRID {
+    max-width: 80%;
+    padding-top: 1rem;
     gap: 0.1rem;
     display: grid;
     grid-template-columns: 2fr 2fr 2fr;
@@ -294,10 +382,16 @@ label {
     width: 90%;
     gap: 0.1rem;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    align-content: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    /* margin-bottom: 1rem; */
   }
 
   .main__search {
+    margin-top: 3rem;
+    padding: 1rem;
     display: flex;
   }
 
@@ -306,12 +400,52 @@ label {
     flex-direction: column;
     justify-content: center;
     align-items: baseline;
-    margin: 1rem;
     /* border: solid 1px orange; */
   }
 
   .about__article {
-    margin-top: 3rem;
+    padding: 3rem;
     width: 70%;
+  }
+
+  /* ---- FOOTER ---- */
+
+  footer nav {
+    padding-bottom: 1rem;
+  }
+
+  .FOOTER__LOGO {
+    width: 5rem;
+  }
+
+  .FOOTER__TEXT {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.1rem;
+  }
+
+  footer ul {
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.1rem;
+    /* border: solid 1px grey; */
+  }
+
+  footer li {
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    /* border: solid 1px; */
+  }
+
+  footer h2 {
+    font-size: 1.5rem;
+  }
+
+  footer p {
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    /* margin: 0.1rem; */
   }
 }
