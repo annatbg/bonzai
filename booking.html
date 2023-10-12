@@ -3,29 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/logo/bonz.ai-logo-black-symbol.png"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Book your stay!</title>
   </head>
   <body>
+    <!-- HEADER CONTENT -->
     <header>
       <nav>
         <ul>
           <li>
             <a href="index.html">
               <img
-                class="header__logo"
-                src="assets/logo/bonz.ai-logo-black-landscape.png"
-                alt=""
+                class="HEADER__LOGO"
+                src="assets/logo/bonz.ai-logo-black-portrait-full.png"
+                alt="bonzai logo"
               />
             </a>
           </li>
-
-          <li><a href="about.html">About & Gallery</a></li>
-          <li><a href="booking.html">Our Rooms</a></li>
+          <li>
+            <a href="about.html">About & Gallery</a>
+          </li>
+          <li>
+            <a href="booking.html">Our Rooms</a>
+          </li>
         </ul>
       </nav>
-      <section class="hero__img">
-        <section class="hero__text">
+      <section class="HERO__IMG">
+        <section class="HERO__TEXT">
           <h1>Our Rooms</h1>
           <p>Rooms Starting at 150€</p>
           <a href="booking.html"><button>Book your stay!</button></a>
@@ -33,11 +42,12 @@
       </section>
     </header>
 
+    <!-- MAIN CONTENT -->
     <main>
-      <!-- ----- SEARCH ROOMS ------ -->
-      <section class="main__search">
+      <!--  ROOM SEARCH CONTENT  -->
+      <section class="MAIN__SEARCH">
         <!-- select 1 -->
-        <article class="main__search__card">
+        <article class="MAIN__SEARCH__CARD">
           <section class="main__input__select">
             <label for="room">Room type</label>
             <select name="room" id="room">
@@ -50,7 +60,7 @@
         </article>
 
         <!-- select 2 -->
-        <article class="main__search__card">
+        <article class="MAIN__SEARCH__CARD">
           <section class="main__input__select">
             <label for="guests">Guests</label>
             <select name="guests" id="cars">
@@ -63,7 +73,7 @@
         </article>
 
         <!-- range -->
-        <article class="main__search__card">
+        <article class="MAIN__SEARCH__CARD">
           <section class="main__input__range">
             <label for="volume">Room price</label>
             <input type="range" id="price" name="price" min="0" max="10" />
@@ -71,7 +81,7 @@
         </article>
 
         <!-- week -->
-        <article class="main__search__card">
+        <article class="MAIN__SEARCH__CARD">
           <section class="main__input__week">
             <label for="week">Availability:</label>
             <input
@@ -86,7 +96,7 @@
         </article>
 
         <!-- checkboxes -->
-        <article class="main__search__card">
+        <article class="MAIN__SEARCH__CARD">
           <section class="main__input__check">
             <input type="checkbox" id="breakfast" name="breakfast" />
             <label for="breafast">Breakfast</label>
@@ -104,8 +114,8 @@
         </article>
       </section>
 
-      <!-- -------- GALLERY ROOMS ----------- -->
-      <section class="main__gallery">
+      <!--  ROOMS GALLERY CONTENT  -->
+      <section class="MAIN__GALLERY">
         <section class="main__rooms__card">
           <figure class="main__rooms__price">€150</figure>
           <img class="main__rooms__img" src="assets/photos/01-day.jpg" alt="" />
@@ -128,13 +138,30 @@
         </section>
       </section>
     </main>
-    <!-- ------ FOOTER --------- -->
+
+    <!-- FOOTER CONTENT -->
     <footer>
-      <nav>
-        <h2>Follow us!</h2>
+      <nav class="FOOTER__NAV">
+        <!-- LOGO -->
+        <a href="index.html">
+          <img
+            class="FOOTER__LOGO"
+            src="assets/logo/bonz.ai-logo-black-symbol.png"
+            alt="bonzai logo"
+          />
+        </a>
+        <!-- TEXT -->
+        <article class="FOOTER__TEXT">
+          <p>Hotell Bonz.ai</p>
+          <p>Out There 414 44</p>
+          <p>Phone: 040-664 64 00</p>
+          <p>E-mail: reception@bonz.ai</p>
+          <p>Org.nr: 559055-4134</p>
+        </article>
+
         <!-- SOCIALS -->
-        <ul>
-          <li>
+        <ul class="FOOTER__SOCIALS">
+          <li class="SOCIALS__ITEM">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -145,7 +172,7 @@
               />
             </svg>
           </li>
-          <li>
+          <li class="SOCIALS__ITEM">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -156,7 +183,7 @@
               />
             </svg>
           </li>
-          <li>
+          <li class="SOCIALS__ITEM">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -167,7 +194,7 @@
               />
             </svg>
           </li>
-          <li>
+          <li class="SOCIALS__ITEM">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -179,23 +206,6 @@
             </svg>
           </li>
         </ul>
-        <!-- TEXT -->
-        <article class="FOOTER__TEXT">
-          <p>Hotell Bonz.ai</p>
-          <p>Hygge Gadan 13, 211 21 Kph</p>
-          <p>Phone: 040-664 64 00</p>
-          <p>E-mail: reception@bonz.ai</p>
-          <p>Org.nr: 559055-4134</p>
-        </article>
-
-        <!-- LOGO -->
-        <a href="index.html">
-          <img
-            class="FOOTER__LOGO"
-            src="assets/logo/bonz.ai-logo-black-symbol.png"
-            alt=""
-          />
-        </a>
       </nav>
     </footer>
   </body>
