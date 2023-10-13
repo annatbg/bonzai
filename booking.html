@@ -12,19 +12,22 @@
     <title>Book your stay!</title>
   </head>
   <body>
-    <!-- HEADER CONTENT -->
+    <!-- header -->
     <header>
-      <nav>
+      <!-- navigation block -->
+      <nav class="header__navbar">
         <ul>
           <li>
+            <!-- logo element -->
             <a href="index.html">
               <img
-                class="HEADER__LOGO"
+                class="header__logo"
                 src="assets/logo/bonz.ai-logo-black-portrait-full.png"
                 alt="bonzai logo"
               />
             </a>
           </li>
+          <!-- menu items -->
           <li>
             <a href="about.html">About & Gallery</a>
           </li>
@@ -33,21 +36,25 @@
           </li>
         </ul>
       </nav>
-      <section class="HERO__IMG">
-        <section class="HERO__TEXT">
+      <section class="hero__img">
+        <section class="hero__text">
+          <!-- hero text elements -->
           <h1>Our Rooms</h1>
           <p>Rooms Starting at 150€</p>
-          <a href="booking.html"><button>Book your stay!</button></a>
+          <!-- hero button -->
+          <a href="booking.html"
+            ><button class="hero__button">Book your stay!</button></a
+          >
         </section>
       </section>
     </header>
 
-    <!-- MAIN CONTENT -->
-    <main>
-      <!--  ROOM SEARCH CONTENT  -->
-      <section class="MAIN__SEARCH">
-        <!-- select 1 -->
-        <article class="MAIN__SEARCH__CARD">
+    <!-- main -->
+    <main class="main__rooms">
+      <!--  search  -->
+      <section class="main__room__search">
+        <!-- input type select 1 -->
+        <article class="main__search__card">
           <section class="main__input__select">
             <label for="room">Room type</label>
             <select name="room" id="room">
@@ -59,8 +66,8 @@
           </section>
         </article>
 
-        <!-- select 2 -->
-        <article class="MAIN__SEARCH__CARD">
+        <!-- input type select 2 -->
+        <article class="main__search__card">
           <section class="main__input__select">
             <label for="guests">Guests</label>
             <select name="guests" id="cars">
@@ -72,16 +79,16 @@
           </section>
         </article>
 
-        <!-- range -->
-        <article class="MAIN__SEARCH__CARD">
+        <!-- input type range -->
+        <article class="main__search__card">
           <section class="main__input__range">
             <label for="volume">Room price</label>
             <input type="range" id="price" name="price" min="0" max="10" />
           </section>
         </article>
 
-        <!-- week -->
-        <article class="MAIN__SEARCH__CARD">
+        <!-- input type week -->
+        <article class="main__search__card">
           <section class="main__input__week">
             <label for="week">Availability:</label>
             <input
@@ -95,8 +102,8 @@
           </section>
         </article>
 
-        <!-- checkboxes -->
-        <article class="MAIN__SEARCH__CARD">
+        <!-- input type checkbox -->
+        <article class="main__search__card">
           <section class="main__input__check">
             <input type="checkbox" id="breakfast" name="breakfast" />
             <label for="breafast">Breakfast</label>
@@ -114,44 +121,57 @@
         </article>
       </section>
 
-      <!--  ROOMS GALLERY CONTENT  -->
-      <section class="MAIN__GALLERY">
-        <section class="main__rooms__card">
-          <figure class="main__rooms__price">€150</figure>
-          <img class="main__rooms__img" src="assets/photos/01-day.jpg" alt="" />
+      <!--  gallery  -->
+      <section class="main__gallery">
+        <!-- card-1 -->
+        <section class="main__gallery__card">
+          <!-- price -->
+          <figure class="gallery__card__price">€150</figure>
+          <!-- img -->
+          <img class="gallery__img" src="assets/photos/01-day.jpg" alt="" />
           <p>Standard</p>
         </section>
-        <section class="main__rooms__card">
-          <figure class="main__rooms__price">€300</figure>
-          <img class="main__rooms__img" src="assets/photos/01-day.jpg" alt="" />
+        <!-- card-2 -->
+        <section class="main__gallery__card">
+          <!-- price -->
+          <figure class="gallery__card__price">€300</figure>
+          <!-- img -->
+          <img class="gallery__img" src="assets/photos/01-day.jpg" alt="" />
           <p>Deluxe</p>
         </section>
-        <section class="main__rooms__card">
-          <figure class="main__rooms__price">€400</figure>
-          <img class="main__rooms__img" src="assets/photos/01-day.jpg" alt="" />
+        <!-- card-3 -->
+        <section class="main__gallery__card">
+          <!-- price -->
+          <figure class="gallery__card__price">€400</figure>
+          <!-- img -->
+          <img class="gallery__img" src="assets/photos/01-day.jpg" alt="" />
           <p>Suite</p>
         </section>
-        <section class="main__rooms__card">
-          <figure class="main__rooms__price">€450</figure>
-          <img class="main__rooms__img" src="assets/photos/01-day.jpg" alt="" />
+        <!-- card-4 -->
+        <section class="main__gallery__card">
+          <!-- price -->
+          <figure class="gallery__card__price">€450</figure>
+          <!-- img -->
+          <img class="gallery__img" src="assets/photos/01-day.jpg" alt="" />
           <p>Studio</p>
         </section>
       </section>
     </main>
 
-    <!-- FOOTER CONTENT -->
+    <!-- footer -->
     <footer>
-      <nav class="FOOTER__NAV">
-        <!-- LOGO -->
+      <!-- navigation block -->
+      <nav class="footer__navbar">
+        <!-- logo element -->
         <a href="index.html">
           <img
-            class="FOOTER__LOGO"
+            class="footer__logo"
             src="assets/logo/bonz.ai-logo-black-symbol.png"
             alt="bonzai logo"
           />
         </a>
-        <!-- TEXT -->
-        <article class="FOOTER__TEXT">
+        <!-- text elements -->
+        <article class="footer__text">
           <p>Hotell Bonz.ai</p>
           <p>Out There 414 44</p>
           <p>Phone: 040-664 64 00</p>
@@ -159,9 +179,10 @@
           <p>Org.nr: 559055-4134</p>
         </article>
 
-        <!-- SOCIALS -->
-        <ul class="FOOTER__SOCIALS">
-          <li class="SOCIALS__ITEM">
+        <!-- socials -->
+        <ul class="footer__socials">
+          <!-- socials elements -->
+          <li class="footer__socials__item">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -172,7 +193,7 @@
               />
             </svg>
           </li>
-          <li class="SOCIALS__ITEM">
+          <li class="footer__socials__item">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -183,7 +204,7 @@
               />
             </svg>
           </li>
-          <li class="SOCIALS__ITEM">
+          <li class="footer__socials__item">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"
@@ -194,7 +215,7 @@
               />
             </svg>
           </li>
-          <li class="SOCIALS__ITEM">
+          <li class="footer__socials__item">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               height="1em"

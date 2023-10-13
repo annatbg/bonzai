@@ -14,11 +14,9 @@ html {
   font-family: "Roboto", sans-serif;
 }
 
-/* ------ HEADER ------ */
+/*  HEADER (GLOBAL) */
 
-header nav {
-  /* background-color: #f9bdbd; */
-  /* background-color: #fbd5d5; */
+.header__navbar {
   background-color: #ccd6a6;
   padding-top: 0.8rem;
   padding-bottom: 0.5rem;
@@ -45,39 +43,12 @@ header a {
   text-transform: uppercase;
 }
 
-.HEADER__LOGO {
+.header__logo {
   width: 10rem;
   padding-bottom: 0.5rem;
 }
 
-.HERO__TEXT {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #ffffff;
-}
-
-.HERO__TEXT h1 {
-  width: 100%;
-  font-size: 2rem;
-  text-transform: uppercase;
-}
-
-.HERO__TEXT button {
-  margin-top: 0.5rem;
-  padding: 13px 29px;
-  line-height: 17px;
-  font-size: 1rem;
-  background-color: #fffbe9;
-  /* background-color: #f9bdbd; */
-  border: solid 2px rgb(43, 43, 43);
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.HERO__IMG {
+.hero__img {
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.3)),
     url("assets/photos/09-day.jpg");
   height: 20rem;
@@ -88,23 +59,47 @@ header a {
   /* /* border: solid 5px rgb(245, 46, 79);  */
 }
 
-/* ---- FOOTER ---- */
+.hero__text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+}
 
-.FOOTER__NAV {
+.hero__text h1 {
+  width: 100%;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  margin-top: 0.5rem;
+  padding: 13px 29px;
+  line-height: 17px;
+  font-size: 1rem;
+  background-color: #fffbe9;
+  border: solid 2px rgb(43, 43, 43);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+/* FOOTER (GLOBAL) */
+
+.footer__navbar {
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: #ccd6a6;
-  /* background-color: #fbd5d5; */
 }
 
-.FOOTER__LOGO {
+.footer__logo {
   margin: 2rem;
   width: 4rem;
-  /* padding: 1rem; */
 }
 
-.FOOTER__TEXT {
+.footer__text {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -112,7 +107,15 @@ header a {
   margin-bottom: 2rem;
 }
 
-.FOOTER__SOCIALS {
+.footer p {
+  font-size: 0.8rem;
+  line-height: 2;
+  letter-spacing: 1px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.footer__socials {
   list-style-type: none;
   max-width: 50%;
   display: flex;
@@ -122,25 +125,19 @@ header a {
   padding-bottom: 2rem;
 }
 
-.SOCIALS__ITEM {
+.footer__socials__item {
   font-size: 1.5rem;
   cursor: pointer;
   padding: 0.5rem;
 }
 
-footer p {
-  font-size: 0.8rem;
-  line-height: 2;
-  letter-spacing: 1px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
+/* LANDINGPAGE SPECIFIC CONTENT */
 
-/* ----- MAIN CONTENT ------ */
+/* INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE INSERT HERE */
 
-/* ABOUT & GALLERY */
+/* ABOUT & GALLERY-PAGE SPECIFIC CONTENT */
 
-.MAIN__ABOUT__ARTICLE {
+.main__about__article {
   background-color: #fffbe9;
   display: flex;
   flex-direction: column;
@@ -151,18 +148,16 @@ footer p {
   padding-bottom: 2rem;
 }
 
-.MAIN__ABOUT__ARTICLE h1 {
+.main__about__article h1 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
-.MAIN__ABOUT__ARTICLE p {
+.main__about__article p {
   font-size: 1rem;
 }
 
-/* SERVICES */
-
-.MAIN__SERVICES {
+.main__services {
   background-color: #f4ead5;
   display: flex;
   flex-direction: column;
@@ -172,11 +167,7 @@ footer p {
   padding-bottom: 2rem;
 }
 
-.MAIN__SERVICES h2 {
-  font-size: 1.2rem;
-}
-
-.MAIN__SERVICES__GRID {
+.main__services__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -184,22 +175,21 @@ footer p {
   /* border: solid 1px rgb(74, 235, 109); */
 }
 
-.MAIN__SERVICES__CARD {
+.main__services__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* height: 150px; */
   padding: 0.3rem;
   /* border: solid 1px yellow; */
 }
 
-.MAIN__SERVICES__CARD P {
+.main__services__card p {
   font-size: 0.8rem;
 }
 
-.ICON {
+.main__services__icon {
   height: 1.3rem;
   margin-bottom: 0.5rem;
 }
@@ -209,22 +199,32 @@ figcaption {
   margin-bottom: 0.2rem;
 }
 
-/*  OUR ROOMS PAGE */
+/* OUR ROOMS-PAGE SPECIFIC CONTENT */
 
-main {
+.main__rooms {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
   background-color: #fffbe9;
 }
 
-/* ROOM SEARCH CONTENT */
+.main__room__search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 
-.MAIN__SEARCH__CARD {
+.main__search__card {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: fit-content;
   padding: 1rem;
-
   /* border: solid 1px orange; */
 }
 
@@ -241,16 +241,14 @@ main {
   margin: 0.1rem;
 }
 
-label {
+.main__rooms__search label {
   margin: 0.3rem;
 }
 
-/* ROOMS GALLERY CONTENT */
-
-.main__rooms__card {
+.main__gallery__card {
   margin: 0.5rem;
-  border: solid 0.1rem #fbd5d5;
-
+  border: solid 0.1rem #ccd6a6;
+  background-color: #d0d6b6;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -259,12 +257,12 @@ label {
   border-radius: 1rem;
 }
 
-.main__rooms__card p {
+.main__gallery__card p {
   padding: 1rem;
 }
 
-.main__rooms__price {
-  border: solid 1px pink;
+.gallery__card__price {
+  border: solid 1px #ccd6a6;
   border-radius: 5px;
   background-color: white;
   padding: 0.4rem;
@@ -273,14 +271,17 @@ label {
   top: 2rem;
 }
 
-.main__rooms__img {
+.gallery__img {
   max-width: 90%;
   margin-top: 1rem;
 }
 
-/* ####### BREAKPOINT TABLET ####### */
+/* MEDIA QUERIES */
+
+/* TABLET STYLES */
 
 @media screen and (min-width: 768px) {
+  /* GLOBAL */
   header ul {
     flex-direction: row;
     justify-content: space-evenly;
@@ -291,15 +292,15 @@ label {
     /* border: solid 1px black; */
   }
 
-  .HERO__IMG {
+  .hero__img {
     height: 31.25rem;
   }
 
-  .HERO__IMG h1 {
+  .hero__text h1 {
     font-size: 2rem;
   }
 
-  .HERO__IMG p {
+  .hero__text p {
     font-size: 1.5rem;
   }
 
@@ -307,9 +308,45 @@ label {
     font-size: 1.5rem;
   }
 
-  /* -- MAIN CONTENT -- */
+  .footer__logo {
+    width: 3rem;
+  }
 
-  .main__grid {
+  .footer__text {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 0.1rem;
+  }
+
+  .footer__text p {
+    font-size: 0.7rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    /* margin: 0.1rem; */
+  }
+
+  .footer__socials {
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    /* border: solid 1px grey; */
+  }
+
+  .footer__socials__item {
+    font-size: 1.5rem;
+    padding: 0.6rem;
+    /* border: solid 1px; */
+  }
+
+  /* ABOUT PAGE SPECIFIC */
+
+  .main__about__article {
+    padding: 3rem;
+    width: 70%;
+  }
+
+  .main__services__grid {
     width: 90%;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: 1fr 1fr;
@@ -321,20 +358,36 @@ label {
     /* border: solid 1px yellow; */
   }
 
-  .main__text {
-    font-size: 1rem;
-  }
+  /* ROOMS PAGE SPECIFIC */
 
   .main__rooms {
     padding-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .MAIN__ROOMS__GRID {
+  .main__room__search {
     max-width: 80%;
-    padding-top: 1rem;
-    gap: 0.1rem;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main__search__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    /* border: solid 1px orange; */
+  }
+
+  .main__room__search label {
+    margin: 1rem;
+    font-size: 1rem;
   }
 
   .main__rooms,
@@ -351,66 +404,5 @@ label {
     justify-content: center;
     padding-bottom: 1rem;
     /* margin-bottom: 1rem; */
-  }
-
-  .main__search {
-    margin-top: 3rem;
-    padding: 1rem;
-    display: flex;
-  }
-
-  .main__search__card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: baseline;
-    /* border: solid 1px orange; */
-  }
-
-  .about__article {
-    padding: 3rem;
-    width: 70%;
-  }
-
-  /* ---- FOOTER ---- */
-
-  footer nav {
-    /* border: solid 3px blue; */
-    margin-top: 0;
-  }
-
-  .FOOTER__LOGO {
-    width: 3rem;
-  }
-
-  .FOOTER__TEXT {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 0.1rem;
-  }
-
-  footer ul {
-    justify-content: center;
-    align-items: center;
-    padding: 0.2rem;
-    /* border: solid 1px grey; */
-  }
-
-  footer li {
-    font-size: 1.5rem;
-    padding: 0.6rem;
-    /* border: solid 1px; */
-  }
-
-  footer h2 {
-    font-size: 1.5rem;
-  }
-
-  footer p {
-    font-size: 0.7rem;
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    /* margin: 0.1rem; */
   }
 }
