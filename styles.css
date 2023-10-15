@@ -12,9 +12,14 @@ html {
   width: 100%;
   margin: auto;
   font-family: "Roboto", sans-serif;
+  color: #064420;
 }
 
 /*  HEADER (GLOBAL) */
+
+header {
+  color: #064420;
+}
 
 .header__navbar {
   background-color: #ccd6a6;
@@ -58,7 +63,7 @@ header a {
 
 .hero__text {
   width: 70%;
-  background-color: #ffffff90;
+  background-color: #f4ead580;
   border-radius: 1rem;
   padding: 1rem;
   text-align: center;
@@ -81,8 +86,8 @@ header a {
   padding: 0.9rem 1.8rem;
   line-height: 1rem;
   font-size: 1rem;
-  background-color: #fffbe9;
-  border: solid 2px rgb(43, 43, 43);
+  background-color: #f4ead5;
+  border: solid 0.1rem rgb(43, 43, 43);
   cursor: pointer;
   font-weight: 600;
   text-transform: uppercase;
@@ -113,7 +118,7 @@ header a {
 .footer p {
   font-size: 0.8rem;
   line-height: 3;
-  letter-spacing: 1px;
+  letter-spacing: 0.06rem;
   font-weight: 600;
   text-transform: uppercase;
 }
@@ -138,7 +143,7 @@ header a {
 
 .main__about {
   width: 100%;
-  background-color: #fffbe9;
+  background-color: #f4ead5;
 }
 
 .main__about__article {
@@ -160,7 +165,6 @@ header a {
 }
 
 .main__services {
-  background-color: #f4ead5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -171,8 +175,8 @@ header a {
 
 .main__services__grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   padding: 2rem;
 }
 
@@ -202,7 +206,7 @@ figcaption {
 /* OUR ROOMS-PAGE SPECIFIC CONTENT */
 
 .main__rooms {
-  background-color: #fffbe9;
+  background-color: #f4ead5;
   padding-bottom: 1rem;
 }
 
@@ -259,7 +263,7 @@ figcaption {
 
 .gallery__card__price {
   border: solid 1px #ccd6a6;
-  border-radius: 5px;
+  border-radius: 0.3rem;
   background-color: white;
   padding: 0.4rem;
   position: absolute;
@@ -321,7 +325,7 @@ figcaption {
     font-size: 0.7rem;
     font-weight: 600;
     line-height: 1.5;
-    letter-spacing: 1px;
+    letter-spacing: 0.06rem;
   }
 
   .footer__socials {
@@ -343,9 +347,7 @@ figcaption {
   }
 
   .main__services__grid {
-    width: 90%;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr;
+    max-width: 70%;
   }
 
   .main__services__card {
@@ -365,8 +367,8 @@ figcaption {
   .main__room__search {
     max-width: 70%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
     padding-top: 2rem;
@@ -394,7 +396,7 @@ figcaption {
     width: 90%;
     gap: 0.1rem;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-columns: repeat(4, 2fr);
     align-content: center;
     justify-content: center;
     padding-bottom: 1rem;
@@ -460,7 +462,7 @@ figcaption {
   /* OUR ROOMS-PAGE SPECIFIC */
 
   .main__room__search {
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     grid-template-rows: 1fr;
     padding-bottom: 3rem;
   }
