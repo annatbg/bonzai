@@ -81,7 +81,7 @@ header a {
   font-size: 1rem;
 }
 
-.hero__button {
+.hero__button a {
   margin: 1rem;
   padding: 0.9rem 1.8rem;
   line-height: 1rem;
